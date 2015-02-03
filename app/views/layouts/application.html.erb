@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Turnogo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <script type="text/javascript">
+    eidogoConfig = {
+        theme:          "compact", // "standard" or "compact"
+        mode:           "play", // "play" or "view"
+        showComments:    true,
+        showPlayerInfo:  false,
+        showGameInfo:    false,
+        showTools:       false,
+        showOptions:     false,
+        markCurrent:     true,
+        markVariations:  true,
+        markNext:        false,
+        problemMode:     false,
+        enableShortcuts: false
+    };
+    </script>
+    <script type="text/javascript" src="player/js/all.compressed.js"></script>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
